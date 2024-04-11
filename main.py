@@ -17,6 +17,8 @@ MONGO_DB = os.getenv("MONGO_DB")
 client = MongoClient(MONGO_HOST, MONGO_PORT)
 db = client[MONGO_DB]
 
+
+# Function to detect overlap
 def detect_overlap(polygon1, polygon2, threshold):
     try:
         shapely_polygon1 = shape(polygon1)
