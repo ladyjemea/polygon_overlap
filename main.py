@@ -43,7 +43,7 @@ def detect_overlap(polygon1, polygon2, threshold):
 def process_polygons(collection_name, geojson_field, overlap_threshold, progress_callback=None):
     collection = db[collection_name]
     polygons = collection.find({}, {geojson_field: 1})
-    polygons_list = list(polygons)  # Convert cursor to list
+    polygons_list = list(polygons)
     total_polygons = len(polygons_list)
     processed_polygons = 0
     start_time = time.time()
