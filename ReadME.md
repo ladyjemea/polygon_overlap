@@ -26,7 +26,7 @@ To run the script, use the command-line instructions:
 - `--track_progress` (optional): Track and report progress during execution.
 
 
-## Understanding Output
+## Understanding the Output
 
 The script outputs the detected overlaps between pairs of polygons in the following format:
 
